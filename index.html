@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>burger</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Create Your Burger</h1>
+    </header>
+
+    <main>
+        <input type="text" placeholder="Mio Nome">
+        <h3>Ingredients</h3>
+        <!-- prima riga ingredienti -->
+        <div class="row">
+            <div class="ingrediente">
+                <img src="./img/cheese.svg" alt="">
+                <span>cheese</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+            <div class="ingrediente">
+                <img src="./img/tomato.svg" alt="">
+                <span>tomato</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+        </div>
+         <!-- seconda riga ingredienti -->
+         <div class="row">
+            <div class="ingrediente">
+                <img src="./img/fried-egg.svg" alt="">
+                <span>egg</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+            <div class="ingrediente">
+                <img src="./img/lettuce.svg" alt="">
+                <span>lettuce</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+        </div>
+        <!-- terza riga ingredienti -->
+        <div class="row">
+            <div class="ingrediente">
+                <img src="./img/mustard.svg" alt="">
+                <span>mustard</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+            <div class="ingrediente">
+                <img src="./img/ketchup.svg" alt="">
+                <span>ketchup</span>
+                <input type="checkbox">
+                <span>add</span>
+            </div>
+        </div>
+        <span>Discount Coupon</span>
+        <input type="text ">
+
+       <div><button>Calculate</button></div> 
+       <footer>
+           <div class="row">
+               <div class="your">
+                   <h3>Your price</h3>
+               </div>
+               <div class="price">
+                   <span></span>
+               </div>
+           </div>
+       </footer>
+    </main>
+
+
+    <script src="./assets/main.js"></script>
 </body>
 </html>
