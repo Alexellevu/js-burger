@@ -4,17 +4,56 @@
     margin: 0;
 }
 
-.ingredients{
-
+.title{
+    height: 100px;
+    position: absolute;
 }
-
-
 
 .burger_logo{
     width: 180px !important;
     height: 170px !important;
     padding: 10px;
-    background-color: yellow;
+    background-color: #ffc107;
     border-radius: 80px;
    position: relative;
+   left: 50px;
+   bottom: 20px
 }
+
+
+main{
+    margin-top: 100px;
+}
+
+
+.ingredients{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.ingredient{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    align-items: center;
+    width: 180px;
+    padding: 10px;
+}
+
+.coupon{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+}
+.coupon input{
+    background-color:rgb(240, 240, 132);
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+
+

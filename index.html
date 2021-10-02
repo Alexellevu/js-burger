@@ -11,38 +11,46 @@
 </head>
 <body>
     <header>
-        <div class="row ">.
-            <div class="col-lg-8 bg-warning d-flex flex-row justify-content-between">
-                <h1 class="">Create Your Burger</h1>
-                
+        <div class="row">.
+            <div class="title col-lg-8 bg-warning d-flex flex-row justify-content-between">
+                <h1 class="m-4 fw-bolder ">Create Your Burger</h1>
+              <img class="burger_logo " src="./img/burger-top.png" alt="">  
             </div>
-           <img class="burger_logo " src="./img/burger-top.png" alt="">
+           
         </div>
     </header>
 
 
-    <main >
-        <div class="row">
-            <input class="border-0 fs-2" type="text" placeholder="neme your burger">
-            <h2>Ingredients</h2>
-
-            <section class="ingredients">
+    <main class="mx-4" >
+        <div class="row ">
+            <div class="col-lg-8">
+                <input class="border-0 fs-2" type="text" placeholder="neme your burger">
+                <h2 class="pt-3 pb-2">Ingredients</h2>
+            </div>
+         </div>     
+            <section class="ingredients col-lg-4">
             
                 <!-- input degli ingredienti inseriti dinamicamente -->
             </section>
-            <div class="d-grid gap-2 col-2 mx-auto">
-                <button type="button" class="btn btn-primary btn-lg btn-warning"  id="calculate">Calculate</button>
-            </div>
+        <div class="coupon">
+            <label for="Discount Coupon">Discount Coupon</label>
+            <input class="col-lg-6 border-0 " type="text" name="discount" id="discount" value="" placeholder="a1, a2, a3">
+            
+        </div>
+           
+       <div class="row justify-content-center">
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning"  id="calculate">Calculate</button>
+                </div>
         </div>
 
-        <label for="Discount Coupon">Discount Coupon</label>
-        <input type="text" name="discount" id="discount" value="">
+      
     </main>
 
 
     <footer>
-        <h1>prova</h1>
-        <div class="row">
+       
+        <div class="row mt-2">
             <div class="col-lg-8 d-flex flex-row justify-content-between p-5 text-white bg-danger">
            
                     

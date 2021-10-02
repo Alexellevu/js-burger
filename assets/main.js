@@ -9,10 +9,11 @@ function renderInput(list, el){
 
     el.insertAdjacentHTML('beforeend',
     `
-      <div class="form-group">
+      <div class="ingredient">
         <img width="40" src="./img/${list[counter][0] + '.svg'}">
         <label for="${list[counter][0]}">${list[counter][0]}</label>
         <input type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}">
+        <span>add</span>
       </div>
     `
     )
@@ -24,10 +25,10 @@ function renderInput(list, el){
 var ingredients = [
   ['cheese', '1'],
   ['fried-egg', '2'],
-  ['mustard', '0.5'],
-  ['tomato', '1'],
-  ['lattuce', '1'],
   ['ketchup', '0.5'],
+  ['lattuce', '1'],
+  ['mustard', '1'],
+  ['tomato', '0.5'],
 ]
 
 var ingElement = document.querySelector('.ingredients');
