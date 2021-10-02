@@ -26,7 +26,7 @@ var ingredients = [
   ['cheese', '1'],
   ['fried-egg', '2'],
   ['ketchup', '0.5'],
-  ['lattuce', '1'],
+  ['lettuce', '1'],
   ['mustard', '1'],
   ['tomato', '0.5'],
 ]
