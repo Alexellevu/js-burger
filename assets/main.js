@@ -7,9 +7,10 @@ counter = 0;
 function renderInput(list, el){
   while(counter < list.length){
 
-    el.insertAdjacentHTML('afterbegin',
+    el.insertAdjacentHTML('beforeend',
     `
       <div class="form-group">
+        <img width="40" src="./img/${list[counter][0] + '.svg'}">
         <label for="${list[counter][0]}">${list[counter][0]}</label>
         <input type="checkbox" name="${list[counter][0]}" id="${list[counter][0]}" data-price="${list[counter][1]}">
       </div>
@@ -22,7 +23,7 @@ function renderInput(list, el){
 
 var ingredients = [
   ['cheese', '1'],
-  ['eggs', '2'],
+  ['fried-egg', '2'],
   ['mustard', '0.5'],
   ['tomato', '1'],
   ['lattuce', '1'],
@@ -57,14 +58,27 @@ var sumIngredients = null;
   var total_price = price + sumIngredients;
   console.log(total_price);
 
-
+  var coupone_code = document.getElementById('discount').value
+ /*  console.log(coupone_code); */
+  
 
 //definire codici sconto per il prezzo finale
 var couponsList = [
         'a1', 'a2', 'a3', 'a4'
 ];
 
-//ascoltiamo il click sul pulsante generate
+for (var i = 0; i < couponsList.length; i++) {
+ 
+  if (coupone_code=== couponsList[i]){
+    /* applico uno sconto del 10% in base al codice inserito */
+      total_price -= (total_price * 10)/100;
+    }
+   
+  }
+console.log(total_price);
+
+document.getElementById('total').innerHTML= total_price;
+
 
 });
 

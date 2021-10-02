@@ -5,10 +5,16 @@
 }
 
 .ingredients{
- 
+
 }
 
+
+
 .burger_logo{
-    width: 100px !important;
-    height: 100px !important;
+    width: 180px !important;
+    height: 170px !important;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 80px;
+   position: relative;
 }

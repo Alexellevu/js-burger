@@ -11,9 +11,12 @@
 </head>
 <body>
     <header>
-        <div class="row flex-row">
-            <h1 class="">Create Your Burger</h1>
-            <img class="burger_logo " src="./img/burger-top.png" alt="">
+        <div class="row ">.
+            <div class="col-lg-8 bg-warning d-flex flex-row justify-content-between">
+                <h1 class="">Create Your Burger</h1>
+                
+            </div>
+           <img class="burger_logo " src="./img/burger-top.png" alt="">
         </div>
     </header>
 
@@ -32,19 +35,20 @@
             </div>
         </div>
 
-        <label for="Discount Coupon"></label>
+        <label for="Discount Coupon">Discount Coupon</label>
+        <input type="text" name="discount" id="discount" value="">
     </main>
 
 
     <footer>
         <h1>prova</h1>
         <div class="row">
-            <div class="col-lg-12 d-flex">
+            <div class="col-lg-8 d-flex flex-row justify-content-between p-5 text-white bg-danger">
            
-                    <h3 >Your price</h3>
-              
-              
-                    <span id="price">$</span>
+                    
+                <h3 >Your price</h3>
+
+              <div class="price d-flex flex-row"><h4 class="mt-1">$</h4><h3 id="total"></h3></div>    
                 
             </div>
         </div>
