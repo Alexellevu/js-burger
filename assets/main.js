@@ -55,7 +55,7 @@ var sumIngredients = null;
       }
   }
 
- /*  console.log(sumIngredients); */
+ console.log(sumIngredients);
   var total_price = price + sumIngredients;
   console.log(total_price);
 
@@ -70,17 +70,30 @@ var couponsList = [
 
 for (var i = 0; i < couponsList.length; i++) {
  
-  if (coupone_code=== couponsList[i]){
+  if (coupone_code === couponsList[i]){
     /* applico uno sconto del 10% in base al codice inserito */
       total_price -= (total_price * 10)/100;
     }
    
   }
-console.log(total_price);
+/* console.log(total_price); */
 
 document.getElementById('total').innerHTML= total_price;
 
 
 });
+
+//cancellazione scelte
+document.getElementById('cancel').addEventListener('click',cancellaScelte);
+
+    function cancellaScelte(total_price, coupone_code){
+       /* cancello il totale */
+      total_price = null;
+      console.log(total_price);
+      document.getElementById('total').innerHTML= total_price;
+      /* annullo il codice del coupon */
+      coupone_code = document.getElementById('discount').value='';
+    }
+
 
 

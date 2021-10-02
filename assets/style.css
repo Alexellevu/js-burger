@@ -38,16 +38,22 @@ main{
 .ingredient{
     display: flex;
     flex-direction: row;
-    justify-content:space-around ;
+    justify-content:space-between ;
     align-items: center;
-    width: 180px;
+    width: 200px;
     padding: 10px;
+    font-weight: 600;
+}
+.ingredient span{
+    color: red;
+    margin-left: 10px;
 }
 
 .coupon{
     display: flex;
     flex-direction: row;
     font-weight: 500;
+    padding:1rem;
 }
 .coupon input{
     background-color:rgb(240, 240, 132);
